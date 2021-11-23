@@ -49,8 +49,8 @@ end
 # Given an array of spicy foods, **return an array of hashes** 
 # sorted by heat level from lowest to highest
 def sort_by_heat(spicy_foods)
-  spicy_foods.sort do |a, b|
-    a[:heat_level] <=> b[:heat_level]
+  spicy_foods.sort_by do |a|
+    a[:heat_level]
   end
 end
 
